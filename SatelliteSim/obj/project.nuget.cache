@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "a/kcs26PXis=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\blaze\\Documents\\Projekty\\cs\\SatelliteSim\\SatelliteSim\\SatelliteSim.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\blaze\\.nuget\\packages\\raylib-cs\\8.0.0\\raylib-cs.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
