@@ -20,3 +20,4 @@ C:\Users\blaze\Documents\Projekty\cs\SatelliteSim\SatelliteSim\obj\Debug\net8.0\
 C:\Users\blaze\Documents\Projekty\cs\SatelliteSim\SatelliteSim\obj\Debug\net8.0\SatelliteSim.pdb
 C:\Users\blaze\Documents\Projekty\cs\SatelliteSim\SatelliteSim\obj\Debug\net8.0\SatelliteSim.genruntimeconfig.cache
 C:\Users\blaze\Documents\Projekty\cs\SatelliteSim\SatelliteSim\obj\Debug\net8.0\ref\SatelliteSim.dll
+C:\Users\blaze\Documents\Projekty\cs\SatelliteSim\SatelliteSim\obj\Debug\net8.0\SatelliteSim.sourcelink.json
