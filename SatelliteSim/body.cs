@@ -1,10 +1,12 @@
 ﻿using Raylib_cs;
 
+namespace SatelliteSim;
 
 public class body
 {
-    public double d, dens, mass;
-    public Color c;
+    public double diameter, density, mass, xPos, yPos, xVel, yVel;
+    public Color color;
+    
 
     
     
@@ -14,13 +16,22 @@ public class body
     /// <param name="diameter">In meters</param>
     /// <param name="density">In kg/m^2</param>
     /// <param name="color"></param>
-    public body(double diameter, double density, Color color)
+    public body(double diameter, double density, Color color, double xPos, double yPos)
     {
-        d = diameter;
-        dens = density;
-        c = color;
+        this.diameter = diameter;
+        this.density = density;
+        this.color = color;
 
-        mass = density * ((Math.PI * Math.Pow(d, 3)) / 6);
+        mass = this.density * ((Math.PI * Math.Pow(this.diameter, 3)) / 6);
+
+        this.xPos = xPos;
+        this.yPos = yPos;
+    }
+
+    void setVel(double xVel, double yVel)
+    {
+        this.xVel = xVel;
+        this.yVel = yVel;
     }
 
     public double getAcc(double dist)
