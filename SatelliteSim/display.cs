@@ -3,7 +3,7 @@ using Raylib_cs;
 
 namespace SatelliteSim;
 
-public class Display
+public class display
 {
     private int X, Y, camX = 0, camY = 0, camXOld, camYOld;
     private string Name;
@@ -12,7 +12,7 @@ public class Display
     private bool hold = false, holdNow;
     
 
-    public Display(int x, int y, string name, bool Init)
+    public display(int x, int y, string name, bool Init)
     {
         X = x;
         Y = y;
@@ -28,6 +28,7 @@ public class Display
     {
         scale = scaleDef;
         Raylib.SetConfigFlags(ConfigFlags.ResizableWindow);
+        Raylib.SetTargetFPS(60);
         Raylib.InitWindow(X, Y, Name);
     }
 
@@ -45,7 +46,14 @@ public class Display
 
             if (radius < 5) radius = 5;
             
+            if (sat.color == Color.Green)
+            {
+                Raylib.DrawCircle((int)(X / 2 + (sat.xPos + camX) * scale), (int)(Y / 2 + (sat.yPos + camY) * scale), (int)((sat.diameter + 200000) / 2 * scale), Color.SkyBlue);
+            }
+            
             Raylib.DrawCircle((int)(X / 2 + (sat.xPos + camX) * scale), (int)(Y / 2 + (sat.yPos + camY) * scale), radius, sat.color);
+            Raylib.DrawCircle((int)(X / 2 + (sat.xPos + camX) * scale), (int)(Y / 2 + (sat.yPos + camY) * scale), 2, Color.Black);
+            
         }
         Raylib.EndDrawing();
     }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SatelliteSim")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95e94e799945acc8ee5a4a8498fd48d8616dbfcf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+808dea6d1c350d0c68a17df633969a41a6a4d89a")]
 [assembly: System.Reflection.AssemblyProductAttribute("SatelliteSim")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SatelliteSim")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -28,7 +28,7 @@ public class body
         this.yPos = yPos;
     }
 
-    void setVel(double xVel, double yVel)
+    public void setVel(double xVel, double yVel)
     {
         this.xVel = xVel;
         this.yVel = yVel;
@@ -38,6 +38,11 @@ public class body
     {
         const double G = 6.67430e-11;
         return (mass * G) / Math.Pow(dist, 2);
+    }
+
+    public double howFar(body b)
+    {
+        return Math.Sqrt(Math.Pow(xPos - b.xPos, 2) + Math.Pow(yPos - b.yPos, 2));
     }
 }
 
